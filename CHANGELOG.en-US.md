@@ -1,5 +1,136 @@
 ## Changelog
 
+### 2.3.8
+
+_2023-07-14_
+
+#### Bug fixes
+
+- Correct sass map has-key parameter (#13132 by @wonderl17)
+- Components [date-picker] One input affect the other input (#12181 by @HeftyKoo)
+- Components [virtual-list] Resetting the vertical scrollbar state (#13319 by @huangguangfa)
+- Components [tree] fix node can drop inner (#9770 by @init-qy)
+- Style [progress] linecap value of track is consistent with path (#13395 by @btea)
+- Theme-chalk [form] remove default width of Input in inline form (#13375 by @tolking)
+- Components [checkbox] default after border color is transparent (#13402 by @chenxch)
+- Components [table] multiple line ellipsis tooltip takes effect (#12805 by @btea)
+- Style [select] tooltip positioning is incorrect (#13424 by @wuzhidexiaoming)
+- Tree content checkbox height larger than item height, close #13396 (#13446 by @YunYouJun)
+- Types in exports (#13443 by @zhuying547)
+- Add more exports types (#13498 by @sxzz)
+- Components [color-picker] fix incorrect cursor position (#13516 by @kooriookami)
+- Components [input] lose focus when click suffix icon (#13264 by @tolking)
+- Style(theme-chalk): [table] fix th font weight (#13556 by @kaine0923)
+#### Refactors
+
+- Components [select] override the class using computed (#13302 by @wzc520pyfm)
+
+### 2.3.7
+
+_2023-06-21_
+
+#### Features
+
+- Theme-chalk [form] add default width to Input in inline form (#12897 by @tolking)
+- Components [upload] item add title attribute (#13231 by @btea)
+- Components [Table] add show-overflow-tooltip props (#13169 by @yuyinws)
+
+#### Bug fixes
+
+- Components [backtop] change default visible (#13069 by @init-qy)
+- Components [table] add missing append height (#12676 by @init-qy)
+- Components [table] width of columns become 0 unexpectedly (#12920 by @makedopamine)
+- Components[time-picker] add parseFloat to resolve TimePicker offset (#12837 by @zhengsixsix)
+- Components [input] fix formatter and parse problem (#12622 by @wzc520pyfm)
+- Components [table] fix clearFilter type (#13149 by @mdoi2)
+- Locale : improve sr translation (#13125 by @N-M)
+- Components [form] improve types (#12549 by @ModyQyW)
+- Components [calendar] improve types (#13165 by @ModyQyW)
+- Components [select] filter shake (#12106 by @chenxch)
+- Components [tag] element vertically centered (#13235 by @yj-liuzepeng)
+- Components [table] adjust the showOverflowTooltip value logic (#13282 by @btea)
+- Perf(components): [select-v2] performance enhancement for initStates (#12390 by @CeceWall)
+- Style(theme-chalk): remove unreferenced modules (#12974 by @zwgwf)
+- Style(theme-chalk): change input-number hover style (#13120 by @yj-liuzepeng)
+- Style(theme-chalk): change border-left:0 to border-left-color:transparent (#13107 by @zhengsixsix)
+
+### 2.3.6
+
+_2023-06-02_
+
+#### Bug fixes
+
+- Components [popper] prioritise user's popper-style (#12833 by @Lionad-Morotar)
+- Components [select-v2] Fix border color error (#12755 by @baiwusanyu-c)
+- Components [notification] fix props.zIndex lose efficacy bug (#12474 by @Ganlvin)
+- Components [select] optimize the triggering of blur event (#11524 by @tolking)
+- Components [table] maxHeight shark (#12349 by @chenxch)
+- Components [steps] preserve the order of subcomponents (#12896 by @makedopamine)
+
+#### Refactors
+
+- Components [message-box] remove useRestoreActive (#11646 by @tolking)
+
+### 2.3.5
+
+_2023-05-19_
+
+#### Features
+
+- Docs right menu tag convert (#12606 by @btea)
+- Components [carousel] If the carousel height is auto apply item height (#12388 by @qq282126990)
+
+#### Bug fixes
+
+- Components [table] text node not have closest method (#12543 by @btea)
+- Components [loading] Compatible with vue3.2.0~12 (#12377 by @chenxch)
+- Components [tree] fix always trigger drag (#12612 by @init-qy)
+- Components [image] fixed lazyLoad scroll end not loading (#12596 by @cicada-ah)
+- Components [table-v2] Adjust the expandable (#12519 by @chenxch)
+- Components [upload] before-upload change data in promise (#12575 by @GenerQAQ)
+- Components [menu] calc slice index remove comment node (#12472 by @chenxch)
+- Components [input-number] add Judging if the max is greater than the min (#12741 by @zhengsixsix)
+- Components [tree] Fix TreeOptionProps (#12511 by @lyric-zemin)
+- Components [select] fix placeholder display (#11051 by @sleepyShen1989)
+- Components [TreeSelect] incorrect check event params (#12370 by @yujinpan)
+- Components [TreeSelect] checking node reset checked cache node (#12367 by @yujinpan)
+- Components [tree-select] incorrect selection when using `checkOnClickNode` without checkbox (#12826 by @yujinpan)
+- Improvement(locale) : update fa language. (#12677 by @4limirzaei)
+
+#### Refactors
+
+- Components [steps] optomizate class in code (#12672 by @wzc520pyfm)
+
+### 2.3.4
+
+_2023-04-23_
+
+#### Features
+
+- Components [button] add tag attribute (#11853 by @tolking)
+- Components [progress] support set striped progress bar (#12333 by @wzc520pyfm)
+- Docs document preview jumps to playground with pr number (#12365 by @btea)
+- Components [tree] support customize content when data is empty (#12459 by @heappynd)
+
+#### Bug fixes
+
+- Components [image] Display error content when picture loading fails (#11600 by @ljf1834)
+- Components [select] delete key should not choose tag (#12200 by @MrWeilian)
+- Components [date-picker] optimize props definition and export (#12199 by @Brain777777)
+- Components [menu] change declartion of ulStyle to setup function (#12319 by @CeceWall)
+- Components [input] Write Chinese in parenthesis, letters repeat (#12154 by @HeftyKoo)
+- Components [loading] fix zIndex (#12442 by @pan2-2)
+- Components [dropdown] improve types (#12514 by @ModyQyW)
+- Components [select] correct update selectSize (#11973 by @acyza)
+- Build(components): fix generateExternal use wrong reference (#12180 by @daolanfler)
+- Chore(build): optimize the type conversion of tag plugin (#11590 by @tolking)
+- Style(theme-chalk): [menu] horizontal mode submenu line-high (#11848 by @WindBearr)
+- Style(theme-chalk): [transfer] improve transfer filter style (#12454 by @wjw-gavin)
+
+#### Refactors
+
+- Extract isClient and isNumber isBoolean (#12504 by @btea)
+
 ### 2.3.3
 
 _2023-04-07_
